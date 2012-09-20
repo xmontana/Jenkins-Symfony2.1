@@ -1,7 +1,7 @@
 Jenkins Symfony2.1
 =========================
 
-Based on alex88' Symfony 2.1. template: https://github.com/alex88/symfony2.1-jenkins-template and  sebastianbergmann' PHP-jenkins-template https://github.com/sebastianbergmann/PHP-jenkins-template .
+Based on alex88' Symfony 2.1. template: https://github.com/alex88/symfony2.1-jenkins-template and sebastianbergmann' PHP-jenkins-template https://github.com/sebastianbergmann/PHP-jenkins-template .
 
 
 ### Install Jenkins and PHP-TEMPLATE
@@ -25,9 +25,7 @@ Process to install the template:
      cd ..  
      chown -R jenkins:jenkins php-template/
 
-2. Reload Jenkins' configuration, for instance using the Jenkins CLI:
-
-     java -jar jenkins-cli.jar -s http://localhost:8080 reload-configuration
+2. Reload Jenkins' configuration.
 
 3. Click on "New Job".
 
@@ -48,13 +46,13 @@ Process to install the template:
 If you have any problems, please check http://jenkins-php.org/
 
 
-### Configuring Symfony2 Project
+### Configuring Symfony2.1 Project
 
 
 1. Clone this repository:
     git clone git@github.com:xmontana/php-jenkins-template.git/jenking-symfony2.1
 
-2. Move the "jenkins" folder to `[SYMFONY2_ROOT]/app/Resources/` inside your Symfony2 project.
+2. Move the "jenkins" folder insde folder "jenking-symfony2.1" to `[SYMFONY2_ROOT]/app/Resources/` inside your Symfony2 project.
 
 3. Move `build.xml` to the root folder of your Symfony2 application.
 
@@ -63,3 +61,7 @@ If you have any problems, please check http://jenkins-php.org/
 5. Add th [symfony2-coding-standards](https://github.com/opensky/Symfony2-coding-standard) in your phpcs naming it as `Symfony2` or edit the phpcs target on build.xml with the right parameters for your envirement.
 
 You can customize the configuration as you want, this works fine with me :)
+
+Note: This template is for Symfony2.1 with composer.
+
+Note2: The build procedure will copy parameters.yml.dist to parameters.yml remember that you don't commit this file for best practices.
