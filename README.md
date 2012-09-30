@@ -21,7 +21,7 @@ Process to install the template:
      cd $JENKINS_HOME/jobs  
      mkdir php-template  
      cd php-template  
-     wget https://github.com/xmontana/php-jenkins-template/raw/master/php-jenkins-template/config.xml  
+     wget https://raw.github.com/xmontana/Jenkins-Symfony2.1/master/php-jenkins-template/config.xml  
      cd ..  
      chown -R jenkins:jenkins php-template/
 
@@ -50,7 +50,7 @@ If you have any problems, please check http://jenkins-php.org/
 
 
 1. Clone this repository:
-    git clone git@github.com:xmontana/php-jenkins-template.git/jenking-symfony2.1
+    git clone https://github.com/xmontana/Jenkins-Symfony2.1.git
 
 2. Move the "jenkins" folder insde folder "jenking-symfony2.1" to `[SYMFONY2_ROOT]/app/Resources/` inside your Symfony2 project.
 
